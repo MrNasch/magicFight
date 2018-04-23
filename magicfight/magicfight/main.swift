@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+ print("hello")
 //creat game
 class Game {
     // created var newGame imported when you creat a new game
@@ -15,20 +15,9 @@ class Game {
     var endGame : String = "Good job " + "you won"
 }
 
-//creat player
-class Player {
-    var name: String
-    var usedCharacters = [Characters]()
-    let numberOfCharacters = 3
-    
-    init(name: String){
-        self.name = name
-    }
-}
-
 //creat plate
 class Plate {
-    var characters = [Characters]()
+    var personnages = [Personnage]()
     var players = [Player]()
     let numberOfPlayers = 2
 }
@@ -42,59 +31,63 @@ class Chest {
 class RandomKill {
     
 }
-
 //creat class CHaracters dictionnaires”
-class Characters {
+class Personnage {
     var name: String
     
     init(name: String){
         self.name = name
     }
 }
-    //creat class fighter
-    class Fighter {
-        var name = ""
-        var life = 100
-        var attack = 10
+//creat class fighter
+class Fighter {
+    var name = ""
+    var life = 100
+    var attack = 10
+    
+    func strike() {
         
-        func strike() {
-            
-        }
+    }
+}
+
+//creat class magus
+class Magus {
+    var name: String
+    var life = 120
+    var heal = 15
+    init(name: String){
+        self.name = name
     }
     
-    //creat class magus
-    class Magus {
-        var name: String
-        var life = 120
-        var heal = 15
-        init(name: String){
-            self.name = name
-        }
+    func regen() {
         
-        func regen() {
-            
-        }
     }
+}
+
+//creat class colossus
+class Colossus {
+    var name = ""
+    var life = 180
+    var attack = 5
     
-    //creat class colossus
-    class Colossus {
-        var name = ""
-        var life = 180
-        var attack = 5
+    func strike() {
         
-        func strike() {
-            
-        }
     }
+}
+
+//creat class dwarf
+class Dwarf {
+    var name = ""
+    var life = 70
+    var attack = 25
     
-    //creat class dwarf
-    class Dwarf {
-        var name = ""
-        var life = 70
-        var attack = 25
+    func strike() {
         
-        func strike() {
-            
-        }
     }
+}
+
+var nameOfPlayer = readLine()
+if let nameOfPlayer = nameOfPlayer {
+    print(nameOfPlayer)
+}
 
