@@ -18,6 +18,7 @@
 		F41741E4208E64AA005E2592 /* dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741E3208E64AA005E2592 /* dwarf.swift */; };
 		F41741E6208E64DA005E2592 /* randomKill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741E5208E64DA005E2592 /* randomKill.swift */; };
 		F41741E8208E64FE005E2592 /* chest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741E7208E64FE005E2592 /* chest.swift */; };
+		F41741EA208E6F40005E2592 /* classe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741E9208E6F40005E2592 /* classe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		F41741E3208E64AA005E2592 /* dwarf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dwarf.swift; sourceTree = "<group>"; };
 		F41741E5208E64DA005E2592 /* randomKill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomKill.swift; sourceTree = "<group>"; };
 		F41741E7208E64FE005E2592 /* chest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chest.swift; sourceTree = "<group>"; };
+		F41741E9208E6F40005E2592 /* classe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				F41741DD208E6450005E2592 /* fighter.swift */,
 				F41741DB208E642A005E2592 /* personnage.swift */,
 				F41741D9208E63ED005E2592 /* game.swift */,
+				F41741E9208E6F40005E2592 /* classe.swift */,
 				F41741D7208E63B2005E2592 /* plate.swift */,
 				F41741D5208E6313005E2592 /* player.swift */,
 			);
@@ -159,6 +162,7 @@
 				F41741DA208E63ED005E2592 /* game.swift in Sources */,
 				F41741DC208E642A005E2592 /* personnage.swift in Sources */,
 				F41741E6208E64DA005E2592 /* randomKill.swift in Sources */,
+				F41741EA208E6F40005E2592 /* classe.swift in Sources */,
 				F41741E0208E6470005E2592 /* magus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

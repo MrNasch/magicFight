@@ -7,10 +7,11 @@
 //
 
 import Foundation
- print("hello")
+
 
 var nameOfPlayer = readLine()
 if let nameOfPlayer = nameOfPlayer {
     print(nameOfPlayer)
 }
+
 
