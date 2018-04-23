@@ -15,12 +15,7 @@ class Game {
     var endGame : String = "Good job " + "you won"
 }
 
-//creat plate
-class Plate {
-    var personnages = [Personnage]()
-    var players = [Player]()
-    let numberOfPlayers = 2
-}
+
 
 //creat class Chest
 class Chest {
