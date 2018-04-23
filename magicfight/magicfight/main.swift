@@ -17,10 +17,7 @@ class Chest {
     
 }
 
-//creat class randomKill
-class RandomKill {
-    
-}
+
 
 
 
