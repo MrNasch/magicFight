@@ -13,6 +13,7 @@
 		F41741DA208E63ED005E2592 /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741D9208E63ED005E2592 /* game.swift */; };
 		F41741DC208E642A005E2592 /* personnage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741DB208E642A005E2592 /* personnage.swift */; };
 		F41741DE208E6450005E2592 /* fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741DD208E6450005E2592 /* fighter.swift */; };
+		F41741E0208E6470005E2592 /* magus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741DF208E6470005E2592 /* magus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		F41741D9208E63ED005E2592 /* game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
 		F41741DB208E642A005E2592 /* personnage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personnage.swift; sourceTree = "<group>"; };
 		F41741DD208E6450005E2592 /* fighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fighter.swift; sourceTree = "<group>"; };
+		F41741DF208E6470005E2592 /* magus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				343C2EF42088CA1200B83722 /* main.swift */,
+				F41741DF208E6470005E2592 /* magus.swift */,
 				F41741DD208E6450005E2592 /* fighter.swift */,
 				F41741DB208E642A005E2592 /* personnage.swift */,
 				F41741D9208E63ED005E2592 /* game.swift */,
@@ -140,6 +143,7 @@
 				F41741DE208E6450005E2592 /* fighter.swift in Sources */,
 				F41741DA208E63ED005E2592 /* game.swift in Sources */,
 				F41741DC208E642A005E2592 /* personnage.swift in Sources */,
+				F41741E0208E6470005E2592 /* magus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
