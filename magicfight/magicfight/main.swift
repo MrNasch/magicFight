@@ -9,24 +9,6 @@
 import Foundation
  print("hello")
 
-
-
-
-//creat class Chest
-class Chest {
-    
-}
-
-
-
-
-
-
-
-
-
-
-
 var nameOfPlayer = readLine()
 if let nameOfPlayer = nameOfPlayer {
     print(nameOfPlayer)
