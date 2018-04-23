@@ -21,14 +21,7 @@ class Chest {
 class RandomKill {
     
 }
-//creat class CHaracters dictionnaires”
-class Personnage {
-    var name: String
-    
-    init(name: String){
-        self.name = name
-    }
-}
+
 //creat class fighter
 class Fighter {
     var name = ""
