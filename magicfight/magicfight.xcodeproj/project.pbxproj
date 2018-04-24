@@ -21,6 +21,8 @@
 		F41741EA208E6F40005E2592 /* classe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741E9208E6F40005E2592 /* classe.swift */; };
 		F41741EC208F4944005E2592 /* weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741EB208F4944005E2592 /* weapon.swift */; };
 		F41741EE208F4A2B005E2592 /* sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741ED208F4A2B005E2592 /* sword.swift */; };
+		F41741F0208F58DA005E2592 /* scepter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741EF208F58DA005E2592 /* scepter.swift */; };
+		F41741F2208F5A40005E2592 /* shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741F1208F5A40005E2592 /* shield.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +53,8 @@
 		F41741E9208E6F40005E2592 /* classe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classe.swift; sourceTree = "<group>"; };
 		F41741EB208F4944005E2592 /* weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weapon.swift; sourceTree = "<group>"; };
 		F41741ED208F4A2B005E2592 /* sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sword.swift; sourceTree = "<group>"; };
+		F41741EF208F58DA005E2592 /* scepter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scepter.swift; sourceTree = "<group>"; };
+		F41741F1208F5A40005E2592 /* shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shield.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				343C2EF42088CA1200B83722 /* main.swift */,
 				F41741EB208F4944005E2592 /* weapon.swift */,
 				F41741ED208F4A2B005E2592 /* sword.swift */,
+				F41741F1208F5A40005E2592 /* shield.swift */,
+				F41741EF208F58DA005E2592 /* scepter.swift */,
 				F41741E7208E64FE005E2592 /* chest.swift */,
 				F41741E5208E64DA005E2592 /* randomKill.swift */,
 				F41741E3208E64AA005E2592 /* dwarf.swift */,
@@ -158,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41741F2208F5A40005E2592 /* shield.swift in Sources */,
 				F41741E8208E64FE005E2592 /* chest.swift in Sources */,
 				F41741E4208E64AA005E2592 /* dwarf.swift in Sources */,
 				F41741D6208E6313005E2592 /* player.swift in Sources */,
@@ -169,6 +176,7 @@
 				F41741E2208E648D005E2592 /* colossus.swift in Sources */,
 				F41741DA208E63ED005E2592 /* game.swift in Sources */,
 				F41741DC208E642A005E2592 /* personnage.swift in Sources */,
+				F41741F0208F58DA005E2592 /* scepter.swift in Sources */,
 				F41741E6208E64DA005E2592 /* randomKill.swift in Sources */,
 				F41741EA208E6F40005E2592 /* classe.swift in Sources */,
 				F41741E0208E6470005E2592 /* magus.swift in Sources */,
