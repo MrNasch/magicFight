@@ -24,6 +24,7 @@
 		F41741F0208F58DA005E2592 /* scepter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741EF208F58DA005E2592 /* scepter.swift */; };
 		F41741F2208F5A40005E2592 /* shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741F1208F5A40005E2592 /* shield.swift */; };
 		F41741F4208F5A7B005E2592 /* axe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741F3208F5A7B005E2592 /* axe.swift */; };
+		F41741F6208F5AEA005E2592 /* mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741F5208F5AEA005E2592 /* mass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +58,7 @@
 		F41741EF208F58DA005E2592 /* scepter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scepter.swift; sourceTree = "<group>"; };
 		F41741F1208F5A40005E2592 /* shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shield.swift; sourceTree = "<group>"; };
 		F41741F3208F5A7B005E2592 /* axe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = axe.swift; sourceTree = "<group>"; };
+		F41741F5208F5AEA005E2592 /* mass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				F41741ED208F4A2B005E2592 /* sword.swift */,
 				F41741F1208F5A40005E2592 /* shield.swift */,
 				F41741F3208F5A7B005E2592 /* axe.swift */,
+				F41741F5208F5AEA005E2592 /* mass.swift */,
 				F41741EF208F58DA005E2592 /* scepter.swift */,
 				F41741E7208E64FE005E2592 /* chest.swift */,
 				F41741E5208E64DA005E2592 /* randomKill.swift */,
@@ -180,6 +183,7 @@
 				F41741E2208E648D005E2592 /* colossus.swift in Sources */,
 				F41741DA208E63ED005E2592 /* game.swift in Sources */,
 				F41741DC208E642A005E2592 /* personnage.swift in Sources */,
+				F41741F6208F5AEA005E2592 /* mass.swift in Sources */,
 				F41741F0208F58DA005E2592 /* scepter.swift in Sources */,
 				F41741E6208E64DA005E2592 /* randomKill.swift in Sources */,
 				F41741EA208E6F40005E2592 /* classe.swift in Sources */,
