@@ -19,6 +19,7 @@
 		F41741E6208E64DA005E2592 /* randomKill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741E5208E64DA005E2592 /* randomKill.swift */; };
 		F41741E8208E64FE005E2592 /* chest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741E7208E64FE005E2592 /* chest.swift */; };
 		F41741EA208E6F40005E2592 /* classe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741E9208E6F40005E2592 /* classe.swift */; };
+		F41741EC208F4944005E2592 /* weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741EB208F4944005E2592 /* weapon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		F41741E5208E64DA005E2592 /* randomKill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomKill.swift; sourceTree = "<group>"; };
 		F41741E7208E64FE005E2592 /* chest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chest.swift; sourceTree = "<group>"; };
 		F41741E9208E6F40005E2592 /* classe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classe.swift; sourceTree = "<group>"; };
+		F41741EB208F4944005E2592 /* weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weapon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				343C2EF42088CA1200B83722 /* main.swift */,
+				F41741EB208F4944005E2592 /* weapon.swift */,
 				F41741E7208E64FE005E2592 /* chest.swift */,
 				F41741E5208E64DA005E2592 /* randomKill.swift */,
 				F41741E3208E64AA005E2592 /* dwarf.swift */,
@@ -156,6 +159,7 @@
 				F41741E4208E64AA005E2592 /* dwarf.swift in Sources */,
 				F41741D6208E6313005E2592 /* player.swift in Sources */,
 				F41741D8208E63B2005E2592 /* plate.swift in Sources */,
+				F41741EC208F4944005E2592 /* weapon.swift in Sources */,
 				343C2EF52088CA1200B83722 /* main.swift in Sources */,
 				F41741DE208E6450005E2592 /* fighter.swift in Sources */,
 				F41741E2208E648D005E2592 /* colossus.swift in Sources */,

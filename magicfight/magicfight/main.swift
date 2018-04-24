@@ -13,5 +13,5 @@ var nameOfPlayer = readLine()
 if let nameOfPlayer = nameOfPlayer {
     print(nameOfPlayer)
 }
-
-
+// while numberOfCharacters is not null run this code 
+//while Player1.numberOfCharacters || Player2.numberOfCharacters != 0 {}
