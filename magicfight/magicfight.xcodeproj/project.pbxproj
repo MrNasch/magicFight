@@ -23,6 +23,7 @@
 		F41741EE208F4A2B005E2592 /* sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741ED208F4A2B005E2592 /* sword.swift */; };
 		F41741F0208F58DA005E2592 /* scepter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741EF208F58DA005E2592 /* scepter.swift */; };
 		F41741F2208F5A40005E2592 /* shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741F1208F5A40005E2592 /* shield.swift */; };
+		F41741F4208F5A7B005E2592 /* axe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741F3208F5A7B005E2592 /* axe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,7 @@
 		F41741ED208F4A2B005E2592 /* sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sword.swift; sourceTree = "<group>"; };
 		F41741EF208F58DA005E2592 /* scepter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scepter.swift; sourceTree = "<group>"; };
 		F41741F1208F5A40005E2592 /* shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shield.swift; sourceTree = "<group>"; };
+		F41741F3208F5A7B005E2592 /* axe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = axe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				F41741EB208F4944005E2592 /* weapon.swift */,
 				F41741ED208F4A2B005E2592 /* sword.swift */,
 				F41741F1208F5A40005E2592 /* shield.swift */,
+				F41741F3208F5A7B005E2592 /* axe.swift */,
 				F41741EF208F58DA005E2592 /* scepter.swift */,
 				F41741E7208E64FE005E2592 /* chest.swift */,
 				F41741E5208E64DA005E2592 /* randomKill.swift */,
@@ -167,6 +170,7 @@
 				F41741F2208F5A40005E2592 /* shield.swift in Sources */,
 				F41741E8208E64FE005E2592 /* chest.swift in Sources */,
 				F41741E4208E64AA005E2592 /* dwarf.swift in Sources */,
+				F41741F4208F5A7B005E2592 /* axe.swift in Sources */,
 				F41741D6208E6313005E2592 /* player.swift in Sources */,
 				F41741EE208F4A2B005E2592 /* sword.swift in Sources */,
 				F41741D8208E63B2005E2592 /* plate.swift in Sources */,
