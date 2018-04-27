@@ -1,8 +1,7 @@
-//creat class CHaracters dictionnaires”
+//creat class personnage”
 class Personnage {
     var name: String
-    
-    init(name: String){
+    init(name: String) {
         self.name = name
     }
 }
