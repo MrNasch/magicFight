@@ -10,11 +10,11 @@ import Foundation
 
 var party: Party = Party()
 for i in 1...2 {
-    print("creation de l'équipe \(i)")
+    print("Create your team player \(i)")
     let team = Team()
-    print("creation des personnages")
+    print("Choose and name your characters")
     for j in 1...3 {
-        print("creation du personnage \(j)")
+        print("Pick your character \(j)")
         let name = readLine()
         let personnage: Personnage = Personnage(name: name!)
         team.personnages.append(personnage)
@@ -22,10 +22,10 @@ for i in 1...2 {
     party.teams.append(team)
 }
 for i in 0...1 {
-    print("Equipe \(i+1)")
+    print("Team \(i+1)")
     let team:Team = party.teams[i]
     for j in 0...2 {
-        print("personnage \(j+1)")
+        print("Character \(j+1)")
         let personnage = team.personnages[j]
         print(personnage.name)
     }
