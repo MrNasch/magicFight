@@ -1,7 +1,4 @@
 //creat class fighter
-class Fighter: Classe {
+class Fighter: Personnage {
     var weapon = Sword()
-    init() {
-        super.init(life: 100)
-    }
 }

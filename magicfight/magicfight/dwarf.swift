@@ -1,7 +1,4 @@
 //creat class dwarf
-class Dwarf: Classe {
+class Dwarf: Personnage {
     var weapon = Axe()
-    init() {
-        super.init(life: 80)
-    }
 }
