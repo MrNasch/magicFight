@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		343C2EF52088CA1200B83722 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C2EF42088CA1200B83722 /* main.swift */; };
-		F41741D6208E6313005E2592 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741D5208E6313005E2592 /* player.swift */; };
 		F41741DC208E642A005E2592 /* personnage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741DB208E642A005E2592 /* personnage.swift */; };
 		F41741DE208E6450005E2592 /* fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741DD208E6450005E2592 /* fighter.swift */; };
 		F41741E0208E6470005E2592 /* magus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741DF208E6470005E2592 /* magus.swift */; };
@@ -40,7 +39,6 @@
 /* Begin PBXFileReference section */
 		343C2EF12088CA1200B83722 /* magicfight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = magicfight; sourceTree = BUILT_PRODUCTS_DIR; };
 		343C2EF42088CA1200B83722 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		F41741D5208E6313005E2592 /* player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
 		F41741DB208E642A005E2592 /* personnage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personnage.swift; sourceTree = "<group>"; };
 		F41741DD208E6450005E2592 /* fighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fighter.swift; sourceTree = "<group>"; };
 		F41741DF208E6470005E2592 /* magus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magus.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				F41741DF208E6470005E2592 /* magus.swift */,
 				F41741DD208E6450005E2592 /* fighter.swift */,
 				F41741DB208E642A005E2592 /* personnage.swift */,
-				F41741D5208E6313005E2592 /* player.swift */,
 				F41B953A209248D9008EED0A /* team.swift */,
 			);
 			path = magicfight;
@@ -168,7 +165,6 @@
 				F41741E8208E64FE005E2592 /* chest.swift in Sources */,
 				F41741E4208E64AA005E2592 /* dwarf.swift in Sources */,
 				F41741F4208F5A7B005E2592 /* axe.swift in Sources */,
-				F41741D6208E6313005E2592 /* player.swift in Sources */,
 				F41B953B209248D9008EED0A /* team.swift in Sources */,
 				F41741EE208F4A2B005E2592 /* sword.swift in Sources */,
 				F41741EC208F4944005E2592 /* weapon.swift in Sources */,

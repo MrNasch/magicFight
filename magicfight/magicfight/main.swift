@@ -19,7 +19,7 @@ for i in 1...2 {
             + "\n2. Magus"
             + "\n3. Colossus"
             + "\n4. Dwarf")
-        var personnage: Personnage = Personnage()
+        var personnage: Personnage = Personnage(life: 100)
         if let choice = readLine() {
             switch choice {
             case "1":
@@ -55,3 +55,5 @@ for i in 0...1 {
         print(String(describing: personnage.self))
     }
 }
+party.ChoosePersonnage()
+

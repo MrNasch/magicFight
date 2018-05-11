@@ -7,13 +7,7 @@ class Personnage {
         self.life = life
     }
     
-    func Play(against personnage: Personnage) {
-        print("Please select one personnage")
-        
-        
-        
-        
-    }
+    
     
     
     func getHit(damages: Int) {
