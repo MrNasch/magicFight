@@ -51,7 +51,7 @@ for i in 0...1 {
     for j in 0...2 {
         print("Character \(j+1)")
         let personnage = team.personnages[j]
-        print(personnage.name)
+        print(personnage.description())
         print(String(describing: personnage.self))
     }
 }
