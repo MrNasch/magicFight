@@ -15,6 +15,8 @@ print(party.newGame)
 party.createTeam(number: 1)
 party.createTeam(number: 2)
 
+party.displayTeam(number: 1)
+party.displayTeam(number: 2)
 
 
 party.ChoosePersonnage()

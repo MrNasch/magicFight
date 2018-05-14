@@ -10,12 +10,19 @@ class Party {
     func createTeam(number: Int) {
         print("Create your team player \(number)")
         let team = Team()
-        for j in 0..2 {
+        for _ in 0...2 {
             team.createCharacter()
         }
         print("Choose and name your characters")
         
         teams.append(team)
+    }
+    func displayTeam(number: Int) {
+        print("Team \(number)")
+        
+        for i in 0...2 {
+            teams[number - 1].displayCharacter(index: i)
+        }
     }
     
     func ChoosePersonnage() {

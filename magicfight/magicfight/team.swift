@@ -1,8 +1,6 @@
 class Team {
     var personnages = [Personnage]()
-    var team1: Int = 0
-    var team2: Int = 0
-
+    var j: Int = 0
     
     func createCharacter() {
         print("Wich class do you want to play \(j)"
@@ -33,6 +31,12 @@ class Team {
         let name = readLine()
         personnage.name = name!
         personnages.append(personnage)
+    }
+    
+    func displayCharacter(index: Int) {
+        let personnage = personnages[index]
+        print(String(describing: personnage.self))
+        print(personnage.description())
     }
 }
 
