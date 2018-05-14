@@ -12,10 +12,9 @@ var party: Party = Party()
 var team: Team = Team()
 print(party.newGame)
 
-team.CreatePersonnageTeam1()
-team.CreatePersonnageTeam2()
+party.createTeam(number: 1)
+party.createTeam(number: 2)
 
-party.PersonnageInTheGame()
 
 
 party.ChoosePersonnage()

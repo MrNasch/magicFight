@@ -7,17 +7,15 @@ class Party {
     var newGame: String = "Welcome to MagicFight please select 3 characters"
     var endGame: String = "Good job " + "you won"
     
-    func PersonnageInTheGame() {
-        for i in 0...1 {
-            print("Team \(i+1)")
-            let team:Team = party.teams[i]
-            for j in 0...2 {
-                print("Character \(j+1)")
-                let personnage = team.personnages[j]
-                print(String(describing: personnage.self))
-                print(personnage.description())
-            }
+    func createTeam(number: Int) {
+        print("Create your team player \(number)")
+        let team = Team()
+        for j in 0..2 {
+            team.createCharacter()
         }
+        print("Choose and name your characters")
+        
+        teams.append(team)
     }
     
     func ChoosePersonnage() {
