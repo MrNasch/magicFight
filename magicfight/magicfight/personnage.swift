@@ -2,6 +2,7 @@
 class Personnage {
     var name: String = ""
     var life: Int
+    var weapon = Weapon(damages: 0, healing: 0)
     
     init(life: Int) {
         self.life = life
@@ -26,6 +27,6 @@ class Personnage {
     func description() {
         print("Name : " + self.name)
         print("Life : \(self.life)")
-        print("weapon: ")
+        print("weapon: \(self.weapon.damages)")
     }
 }

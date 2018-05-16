@@ -38,25 +38,25 @@ class Party {
         return userChoice
     }
     
-    func ChoosePersonnage() {
+    func choosePersonnage() {
         print("Please select one personnage from team1")
         print(displayTeam(number: 1))
         let userChoice = input()
         
-        if userChoice != nil {
+       
             usedPersonnageTeam1 = team.personnages[Int(userChoice) - 1]
             print(usedPersonnageTeam1.description())
-        }
+    
         
         print("Please select one personnage from team2")
         print(displayTeam(number: 2))
         let userChoice2 = input()
         
         
-        if userChoice2 != nil {
-            usedPersonnageTeam2 = team.personnages[Int(userChoice) - 1]
+        
+            usedPersonnageTeam2 = team.personnages[Int(userChoice2) - 1]
             print(usedPersonnageTeam2.description())
-        }
+        
     }
 }
 
