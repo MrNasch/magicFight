@@ -5,4 +5,8 @@ class Fighter: Personnage {
     init() {
         super.init(life: 100)
     }
+    
+    override func attackPersonnage(personnage: Personnage) {
+         personnage.getHit(damages: self.weapon.damages)
+    }
 }

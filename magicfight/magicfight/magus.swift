@@ -5,4 +5,7 @@ class Magus: Personnage {
     init() {
         super.init(life: 120)
     }
+    override func attackPersonnage(personnage: Personnage) {
+        personnage.getHit(damages: self.weapon.healing)
+    }
 }

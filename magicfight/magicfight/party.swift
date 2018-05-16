@@ -1,11 +1,22 @@
 class Party {
     var teams = [Team]()
-    var team1UsedPersonnage: Int = 0
-    var team2UsedPersonnage: Int = 0
     
     // created var newGame imported when you creat a new game
     var newGame: String = "Welcome to MagicFight please select 3 characters"
     var endGame: String = "Good job " + "you won"
+    var usedPersonnageTeam1: Personnage = Fighter()
+    var usedPersonnageTeam2: Personnage = Fighter()
+    
+    func input() {
+        var userChoice: Int
+        repeat {
+            if let data = readLine() {
+                if let dataToInt = Int(data) {
+                    userChoice = dataToInt
+                }
+            }
+        } while userChoice != 1 && userChoice != 2 && userChoice != 3
+    }
     
     func createTeam(number: Int) {
         print("Create your team player \(number)")
@@ -28,19 +39,21 @@ class Party {
     func ChoosePersonnage() {
         print("Please select one personnage from team1")
         print(displayTeam(number: 1))
-        let userChoice = readLine()
+        let userChoice = input()
         
         if userChoice != nil {
-            Personnage = team.personnages[userChoice - 1]
+            usedPersonnageTeam1 = team.personnages[Int(userChoice) - 1]
+            print(usedPersonnageTeam1)
         }
         
         print("Please select one personnage from team2")
         print(displayTeam(number: 2))
-        let userChoice2 = readLine()
+        let userChoice2 = input()
         
         
-        if userChoice != nil {
-            Personnage = team.personnages[userChoice - 1]
+        if userChoice2 != nil {
+            usedPersonnageTeam2 = team.personnages[Int(userChoice) - 1]
+            print(usedPersonnageTeam2)
         }
     }
 }

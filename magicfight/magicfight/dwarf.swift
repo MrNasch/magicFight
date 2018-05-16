@@ -5,4 +5,7 @@ class Dwarf: Personnage {
     init() {
         super.init(life: 75)
     }
+    override func attackPersonnage(personnage: Personnage) {
+        personnage.getHit(damages: self.weapon.damages)
+    }
 }
