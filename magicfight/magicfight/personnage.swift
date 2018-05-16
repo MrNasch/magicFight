@@ -2,11 +2,9 @@
 class Personnage {
     var name: String = ""
     var life: Int
-    var weapon: Weapon
     
-    init(life: Int, weapon: Weapon) {
+    init(life: Int) {
         self.life = life
-        self.weapon = weapon
     }
     
     
@@ -28,6 +26,6 @@ class Personnage {
     func description() {
         print("Name : " + self.name)
         print("Life : \(self.life)")
-        print("weapon: \(self.weapon)")
+        print("weapon: ")
     }
 }
