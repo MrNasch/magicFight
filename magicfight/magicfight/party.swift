@@ -37,6 +37,7 @@ class Party {
         } while userChoice != 1 && userChoice != 2 && userChoice != 3
         return userChoice
     }
+    
     func ChoosePersonnage() {
         print("Please select one personnage from team1")
         print(displayTeam(number: 1))

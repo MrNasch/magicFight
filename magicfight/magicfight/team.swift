@@ -14,15 +14,19 @@ class Team {
             case "1":
                 personnage = Fighter()
                 print("You choose a fighter")
+                team.personnages.append(personnage)
             case "2":
                 personnage = Magus()
                 print("You choose a magus")
+                team.personnages.append(personnage)
             case "3":
                 personnage = Colossus()
                 print("You choose a colossus")
+                team.personnages.append(personnage)
             case "4":
                 personnage = Dwarf()
                 print("You choose a dwarf")
+                team.personnages.append(personnage)
             default:
                 print("Please select a class")
             }
