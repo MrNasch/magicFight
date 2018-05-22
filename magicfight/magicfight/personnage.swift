@@ -10,7 +10,10 @@ class Personnage {
     
     
     
-    
+    func getRegen(healing: Int) {
+        self.life = self.life + healing
+        
+    }
     func getHit(damages: Int) {
         self.life = self.life - damages
         

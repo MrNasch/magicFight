@@ -21,6 +21,6 @@ class Magus: Personnage {
         self.weapon = self.magusWeapon
     }
     override func attackPersonnage(personnage: Personnage) {
-        personnage.getHit(damages: self.weapon.healing)
+        personnage.getRegen(healing: self.weapon.damages)
     }
 }
