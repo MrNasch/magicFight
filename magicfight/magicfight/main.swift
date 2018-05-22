@@ -18,7 +18,4 @@ party.createTeam(number: 2)
 party.displayTeam(number: 1)
 party.displayTeam(number: 2)
 
-print(party.teams.count)
-print(team.personnages.count)
-
 party.choosePersonnage()

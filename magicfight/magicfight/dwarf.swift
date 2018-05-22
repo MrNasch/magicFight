@@ -1,6 +1,7 @@
 //creat class dwarf
 class Dwarf: Personnage {
     var dwarfWeapon: Weapon
+    // allows us to change weapon
     override var weapon: Weapon {
         get {
             return dwarfWeapon
@@ -21,6 +22,7 @@ class Dwarf: Personnage {
         super.init(life: 75)
         self.weapon = self.dwarfWeapon
     }
+    // func that attack other personnage
     override func attackPersonnage(personnage: Personnage) {
         personnage.getHit(damages: self.weapon.damages)
     }

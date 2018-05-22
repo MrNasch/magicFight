@@ -1,7 +1,7 @@
 class Team {
     var personnages = [Personnage]()
     var j: Int = 1
-    
+    // func that allows us to choose a personnage and add in the team
     func createCharacter() {
         print("Wich class do you want to play \(j)"
             + "\n1. Fighter"
@@ -37,7 +37,7 @@ class Team {
         personnages.append(personnage)
         j += 1
     }
-    
+    // func that display the personnage choosen
     func displayCharacter(index: Int) {
         let personnage = personnages[index]
         print(String(describing: personnage.self))

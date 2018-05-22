@@ -1,6 +1,7 @@
 //creat class magus
 class Magus: Personnage {
     var magusWeapon: Weapon
+    // allows us to change weapon
     override var weapon: Weapon {
         get {
             return magusWeapon
@@ -20,6 +21,7 @@ class Magus: Personnage {
         super.init(life: 120)
         self.weapon = self.magusWeapon
     }
+    // func that add life to a personnage from his team
     override func attackPersonnage(personnage: Personnage) {
         personnage.getRegen(healing: self.weapon.damages)
     }

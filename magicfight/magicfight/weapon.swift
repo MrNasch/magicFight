@@ -1,3 +1,4 @@
+// class weapon
 class Weapon {
     var damages: Int
     var healing: Int

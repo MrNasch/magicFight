@@ -1,6 +1,7 @@
 //creat class fighter
 class Fighter: Personnage {
     var fighterWeapon: Weapon
+    // allows us to change weapon
     override var weapon: Weapon {
         get {
             return fighterWeapon
@@ -21,7 +22,7 @@ class Fighter: Personnage {
         super.init(life: 100)
         self.weapon = self.fighterWeapon
     }
-    
+    // func that attack other personnage
     override func attackPersonnage(personnage: Personnage) {
          personnage.getHit(damages: self.weapon.damages)
     }

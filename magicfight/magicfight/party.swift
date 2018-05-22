@@ -1,3 +1,4 @@
+// class party
 class Party {
     var teams = [Team]()
     
@@ -6,7 +7,7 @@ class Party {
     var endGame: String = "Good job " + "you won"
     var usedPersonnageTeam1: Personnage = Fighter()
     var usedPersonnageTeam2: Personnage = Fighter()
-    
+    // create 2 diferent team
     func createTeam(number: Int) {
         print("Create your team player \(number)")
         let team = Team()
@@ -17,6 +18,7 @@ class Party {
         
         teams.append(team)
     }
+    // display the 2 diferent team
     func displayTeam(number: Int) {
         print("Team \(number)")
         
@@ -24,6 +26,7 @@ class Party {
             teams[number - 1].displayCharacter(index: i)
         }
     }
+    // func that only work if we choose an INT between 1 and 3
     func input() -> Int {
         var userChoice: Int = Int()
         repeat {
@@ -37,7 +40,7 @@ class Party {
         } while userChoice != 1 && userChoice != 2 && userChoice != 3
         return userChoice
     }
-    
+    // func to choose personnage from 1 team and 1 from the other team
     func choosePersonnage() {
         print("Please select one personnage from team1")
         print(displayTeam(number: 1))

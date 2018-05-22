@@ -9,11 +9,12 @@ class Personnage {
     }
     
     
-    
+    // func add life to the personnage
     func getRegen(healing: Int) {
         self.life = self.life + healing
         
     }
+    // func remove life from the personnage
     func getHit(damages: Int) {
         self.life = self.life - damages
         
@@ -22,11 +23,11 @@ class Personnage {
             self.life = 0
         }
     }
-    
+    // original attack func
     func attackPersonnage(personnage: Personnage) {
         print("Do nothing")
     }
-
+    // display name, life and weapon
     func description() {
         print("Name : " + self.name)
         print("Life : \(self.life)")

@@ -1,6 +1,7 @@
 //creat class colossus
 class Colossus: Personnage {
     var colossusWeapon: Weapon
+    // allows us to change weapon
     override var weapon: Weapon {
         get {
             return colossusWeapon
@@ -21,6 +22,7 @@ class Colossus: Personnage {
         super.init(life: 150)
         self.weapon = self.colossusWeapon
     }
+    // func that attack other personnage
     override func attackPersonnage(personnage: Personnage) {
         personnage.getHit(damages: self.weapon.damages)
     }
