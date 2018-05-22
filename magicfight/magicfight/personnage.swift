@@ -30,6 +30,6 @@ class Personnage {
     func description() {
         print("Name : " + self.name)
         print("Life : \(self.life)")
-        print("weapon: \(self.weapon.damages)")
+        print("damages: \(self.weapon.damages) - Healing: \(self.weapon.healing)")
     }
 }
