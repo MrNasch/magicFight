@@ -1,23 +1,24 @@
 //creat class magus
 class Magus: Personnage {
-    var scepter: Weapon = Weapon(damages: 0, healing: 0)
+    var magusWeapon: Weapon
     override var weapon: Weapon {
         get {
-            return scepter
+            return magusWeapon
         }
         set {
             if newValue is Scepter {
-                scepter = newValue as! Scepter
-            } else if newValue is Mass {
-                scepter = newValue as! Mass
+                magusWeapon = newValue as! Scepter
+            } else if newValue is Stick {
+                magusWeapon = newValue as! Stick
             } else {
                 print("incorrect weapon")
             }
-            self.weapon = newValue
         }
     }
     init() {
+        self.magusWeapon = Scepter()
         super.init(life: 120)
+        self.weapon = self.magusWeapon
     }
     override func attackPersonnage(personnage: Personnage) {
         personnage.getHit(damages: self.weapon.healing)

@@ -1,24 +1,25 @@
 //creat class dwarf
 class Dwarf: Personnage {
-    var axe: Weapon = Weapon(damages: 0, healing: 0)
+    var dwarfWeapon: Weapon
     override var weapon: Weapon {
         get {
-            return axe
+            return dwarfWeapon
         }
         set {
             if newValue is Axe {
-                axe = newValue as! Axe
+                dwarfWeapon = newValue as! Axe
             } else if newValue is Mass {
-                axe = newValue as! Mass
+                dwarfWeapon = newValue as! Mass
             } else {
                 print("incorrect weapon")
             }
-            self.weapon = newValue
         }
     }
     
     init() {
+        self.dwarfWeapon = Axe()
         super.init(life: 75)
+        self.weapon = self.dwarfWeapon
     }
     override func attackPersonnage(personnage: Personnage) {
         personnage.getHit(damages: self.weapon.damages)
