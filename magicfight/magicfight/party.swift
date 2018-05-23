@@ -4,7 +4,6 @@ class Party {
     
     // created var newGame imported when you creat a new game
     var newGame: String = "Welcome to MagicFight please select 3 characters"
-    var endGame: String = "Good job " + "you won"
     var usedPersonnageTeam1: Personnage = Fighter()
     var usedPersonnageTeam2: Personnage = Fighter()
     // create 2 diferent team

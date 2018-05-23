@@ -7,7 +7,14 @@ class Personnage {
     init(life: Int) {
         self.life = life
     }
-    
+    // func play against other player
+    func play(against personnage: Personnage) {
+        
+        self.description()
+        
+            self.attackPersonnage(personnage: personnage)
+        
+    }
     
     // func add life to the personnage
     func getRegen(healing: Int) {
@@ -26,6 +33,7 @@ class Personnage {
     // original attack func
     func attackPersonnage(personnage: Personnage) {
         print("Do nothing")
+        self.description()
     }
     // display name, life and weapon
     func description() {
