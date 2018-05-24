@@ -23,6 +23,6 @@ class Magus: Personnage {
     }
     // func that add life to a personnage from his team
     override func attackPersonnage(personnage: Personnage) {
-        personnage.getRegen(healing: self.weapon.damages)
+        personnage.getRegen(healing: self.weapon.healing)
     }
 }

@@ -12,7 +12,7 @@ class Personnage {
         
         self.description()
         
-            self.attackPersonnage(personnage: personnage)
+        self.attackPersonnage(personnage: personnage)
         
     }
     
