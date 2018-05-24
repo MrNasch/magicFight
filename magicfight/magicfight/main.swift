@@ -13,6 +13,7 @@ var team: Team = Team()
 print(party.newGame)
 var player1 = party.usedPersonnageTeam1
 var player2 = party.usedPersonnageTeam2
+var count = 0
 // create the teams
 party.createTeam(number: 1)
 party.createTeam(number: 2)
@@ -27,6 +28,7 @@ while player1.life > 0 && player2.life > 0 {
         player2.play(against: player1)
     }
     party.choosePersonnage()
+    count += 1
 }
 // we pick the winner
 var nameWinner: String
@@ -39,3 +41,5 @@ if player1.life > 0 {
 
 // we display
 print("The winner is " + nameWinner + " !")
+
+print("You won in \(count) runs")
