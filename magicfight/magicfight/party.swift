@@ -63,26 +63,6 @@ class Party {
         
         print("\(usedPersonnageTeam1)" + " " + "attacked" + " " + "\(usedPersonnageTeam2)")
         print("\(usedPersonnageTeam2) lost \(usedPersonnageTeam1.weapon.damages) life")
-        // team 2 to attack
-        print("Please select one personnage from team2")
-        print(displayTeam(number: 2))
-        let userChoice3 = input()
-        
-        
-        
-        usedPersonnageTeam2 = team.personnages[Int(userChoice3) - 1]
-        print(usedPersonnageTeam2.description())
-        
-        print("Please select one personnage from team1")
-        print(displayTeam(number: 1))
-        let userChoice4 = input()
-        
-        
-        usedPersonnageTeam1 = team.personnages[Int(userChoice4) - 1]
-        print(usedPersonnageTeam1.description())
-        
-        print("\(usedPersonnageTeam2)" + " " + "attacked" + " " + "\(usedPersonnageTeam1)")
-        print("\(usedPersonnageTeam1) lost \(usedPersonnageTeam2.weapon.damages) life")
         
     }
 }
