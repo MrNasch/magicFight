@@ -13,10 +13,10 @@ var team: Team = Team()
 print(party.newGame)
 var player1 = party.usedPersonnageTeam1
 var player2 = party.usedPersonnageTeam2
-
+// create the teams
 party.createTeam(number: 1)
 party.createTeam(number: 2)
-
+// display the teams
 party.displayTeam(number: 1)
 party.displayTeam(number: 2)
 // while team1 is alive and team 2 alive we play
