@@ -1,5 +1,5 @@
 class Team {
-    var personnages = [Personnage]()
+    var heros = [Hero]()
     var j: Int = 1
     // func that allows us to choose a personnage and add in the team
     func createCharacter() {
@@ -8,40 +8,40 @@ class Team {
             + "\n2. Magus"
             + "\n3. Colossus"
             + "\n4. Dwarf")
-        var personnage: Personnage = Personnage(life: 100)
+        var hero = Hero(life: 100)
         if let choice = readLine() {
             switch choice {
             case "1":
-                personnage = Fighter()
+                hero = Fighter()
                 print("You choose a fighter")
-                team.personnages.append(personnage)
+                team.heros.append(hero)
             case "2":
-                personnage = Magus()
+                hero = Magus()
                 print("You choose a magus")
-                team.personnages.append(personnage)
+                team.heros.append(hero)
             case "3":
-                personnage = Colossus()
+                hero = Colossus()
                 print("You choose a colossus")
-                team.personnages.append(personnage)
+                team.heros.append(hero)
             case "4":
-                personnage = Dwarf()
+                hero = Dwarf()
                 print("You choose a dwarf")
-                team.personnages.append(personnage)
+                team.heros.append(hero)
             default:
                 print("Please select a class")
             }
         }
         print("Name your character")
         let name = readLine()
-        personnage.name = name!
-        personnages.append(personnage)
+        hero.name = name!
+        heros.append(hero)
         j += 1
     }
     // func that display the personnage choosen
     func displayCharacter(index: Int) {
-        let personnage = personnages[index]
-        print(String(describing: personnage.self))
-        print(personnage.description())
+        let hero = heros[index]
+        print(String(describing: hero.self))
+        print(hero.description())
     }
 }
 

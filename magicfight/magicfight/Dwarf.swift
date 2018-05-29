@@ -1,5 +1,5 @@
 //creat class dwarf
-class Dwarf: Personnage {
+class Dwarf: Hero {
     var dwarfWeapon: Weapon
     // allows us to change weapon
     override var weapon: Weapon {
@@ -23,7 +23,7 @@ class Dwarf: Personnage {
         self.weapon = self.dwarfWeapon
     }
     // func that attack other personnage
-    override func attackPersonnage(personnage: Personnage) {
-        personnage.getHit(damages: self.weapon.damages)
+    override func attackHero(hero: Hero) {
+        hero.getHit(damages: self.weapon.damages)
     }
 }

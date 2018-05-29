@@ -1,5 +1,5 @@
 //creat class colossus
-class Colossus: Personnage {
+class Colossus: Hero {
     var colossusWeapon: Weapon
     // allows us to change weapon
     override var weapon: Weapon {
@@ -23,7 +23,7 @@ class Colossus: Personnage {
         self.weapon = self.colossusWeapon
     }
     // func that attack other personnage
-    override func attackPersonnage(personnage: Personnage) {
-        personnage.getHit(damages: self.weapon.damages)
+    override func attackHero(hero: Hero) {
+        hero.getHit(damages: self.weapon.damages)
     }
 }

@@ -1,5 +1,5 @@
 //creat class personnage”
-class Personnage {
+class Hero {
     var name: String = ""
     var life: Int
     var weapon = Weapon(damages: 0, healing: 0)
@@ -8,17 +8,17 @@ class Personnage {
         self.life = life
     }
     // func play against other player
-    func play(against personnage: Personnage) {
+    func play(against hero: Hero) {
         
         self.description()
         
-        self.attackPersonnage(personnage: personnage)
+        self.attackHero(hero: hero)
         
     }
     
     // func add life to the personnage
     func getRegen(healing: Int) {
-        self.life = self.life + healing
+        life = life + healing
         
     }
     // func remove life from the personnage
@@ -31,7 +31,7 @@ class Personnage {
         }
     }
     // original attack func
-    func attackPersonnage(personnage: Personnage) {
+    func attackHero(hero: Hero) {
         print("Do nothing")
         self.description()
     }

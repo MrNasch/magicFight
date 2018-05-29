@@ -8,11 +8,11 @@
 
 import Foundation
 
-var party: Party = Party()
-var team: Team = Team()
+let party: Party = Party()
+let team: Team = Team()
 print(party.newGame)
-var player1 = party.usedPersonnageTeam1
-var player2 = party.usedPersonnageTeam2
+var player1 = party.usedHeroTeam1
+var player2 = party.usedHeroTeam2
 var count = 0
 // create the teams
 party.createTeam(number: 1)
@@ -27,16 +27,16 @@ while player1.life > 0 && player2.life > 0 {
     if player2.life > 0 {
         player2.play(against: player1)
     }
-    party.choosePersonnage()
+    party.chooseHero()
     count += 1
 }
 // we pick the winner
 var nameWinner: String
 
 if player1.life > 0 {
-    nameWinner = party.teams[1].personnages.description
+    nameWinner = party.teams[1].heros.description
 } else {
-    nameWinner = party.teams[2].personnages.description
+    nameWinner = party.teams[2].heros.description
 }
 
 // we display

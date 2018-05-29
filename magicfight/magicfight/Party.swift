@@ -4,8 +4,8 @@ class Party {
     
     // created var newGame imported when you creat a new game
     var newGame: String = "Welcome to MagicFight please select 3 characters"
-    var usedPersonnageTeam1: Personnage = Fighter()
-    var usedPersonnageTeam2: Personnage = Fighter()
+    var usedHeroTeam1: Hero = Fighter()
+    var usedHeroTeam2: Hero = Fighter()
     // create 2 diferent team
     func createTeam(number: Int) {
         print("Create your team player \(number)")
@@ -40,7 +40,7 @@ class Party {
         return userChoice
     }
     // func to choose personnage from 1 team and 1 from the other team
-    func choosePersonnage() {
+    func chooseHero() {
         
         // team 1 attack
         print("Please select one personnage from team1")
@@ -48,8 +48,8 @@ class Party {
         let userChoice = input()
         
        
-            usedPersonnageTeam1 = team.personnages[Int(userChoice) - 1]
-            print(usedPersonnageTeam1.description())
+            usedHeroTeam1 = team.heros[Int(userChoice) - 1]
+            print(usedHeroTeam1.description())
     
         
         print("Please select one personnage from team2")
@@ -58,11 +58,11 @@ class Party {
         
         
         
-            usedPersonnageTeam2 = team.personnages[Int(userChoice2) - 1]
-            print(usedPersonnageTeam2.description())
+            usedHeroTeam2 = team.heros[Int(userChoice2) - 1]
+            print(usedHeroTeam2.description())
         
-        print("\(usedPersonnageTeam1)" + " " + "attacked" + " " + "\(usedPersonnageTeam2)")
-        print("\(usedPersonnageTeam2) lost \(usedPersonnageTeam1.weapon.damages) life")
+        print("\(usedHeroTeam1)" + " " + "attacked" + " " + "\(usedHeroTeam2)")
+        print("\(usedHeroTeam2) lost \(usedHeroTeam1.weapon.damages) life")
         
     }
 }

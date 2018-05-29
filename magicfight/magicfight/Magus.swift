@@ -1,5 +1,5 @@
 //creat class magus
-class Magus: Personnage {
+class Magus: Hero {
     var magusWeapon: Weapon
     // allows us to change weapon
     override var weapon: Weapon {
@@ -22,7 +22,7 @@ class Magus: Personnage {
         self.weapon = self.magusWeapon
     }
     // func that add life to a personnage from his team
-    override func attackPersonnage(personnage: Personnage) {
-        personnage.getRegen(healing: self.weapon.healing)
+    override func attackHero(hero: Hero) {
+        hero.getRegen(healing: self.weapon.healing)
     }
 }

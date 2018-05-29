@@ -1,5 +1,5 @@
 //creat class fighter
-class Fighter: Personnage {
+class Fighter: Hero {
     var fighterWeapon: Weapon
     // allows us to change weapon
     override var weapon: Weapon {
@@ -23,7 +23,7 @@ class Fighter: Personnage {
         self.weapon = self.fighterWeapon
     }
     // func that attack other personnage
-    override func attackPersonnage(personnage: Personnage) {
-         personnage.getHit(damages: self.weapon.damages)
+    override func attackHero(hero: Hero) {
+         hero.getHit(damages: self.weapon.damages)
     }
 }
