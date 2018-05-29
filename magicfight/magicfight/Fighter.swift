@@ -24,6 +24,6 @@ class Fighter: Hero {
     }
     // func that attack other personnage
     override func attackHero(hero: Hero) {
-         hero.getHit(damages: self.weapon.damages)
+        hero.getHit(damages: self.weapon.damages)
     }
 }

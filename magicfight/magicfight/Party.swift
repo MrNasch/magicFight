@@ -47,10 +47,10 @@ class Party {
         print(displayTeam(number: 1))
         let userChoice = input()
         
-       
-            usedHeroTeam1 = team.heros[Int(userChoice) - 1]
-            print(usedHeroTeam1.description())
-    
+        
+        usedHeroTeam1 = team.heros[Int(userChoice) - 1]
+        print(usedHeroTeam1.description())
+        
         
         print("Please select one personnage from team2")
         print(displayTeam(number: 2))
@@ -58,8 +58,8 @@ class Party {
         
         
         
-            usedHeroTeam2 = team.heros[Int(userChoice2) - 1]
-            print(usedHeroTeam2.description())
+        usedHeroTeam2 = team.heros[Int(userChoice2) - 1]
+        print(usedHeroTeam2.description())
         
         print("\(usedHeroTeam1)" + " " + "attacked" + " " + "\(usedHeroTeam2)")
         print("\(usedHeroTeam2) lost \(usedHeroTeam1.weapon.damages) life")
