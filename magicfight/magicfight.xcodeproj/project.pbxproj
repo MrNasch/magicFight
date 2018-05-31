@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		343C2EF52088CA1200B83722 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C2EF42088CA1200B83722 /* Main.swift */; };
+		343C2EF52088CA1200B83722 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C2EF42088CA1200B83722 /* main.swift */; };
 		F41741DC208E642A005E2592 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741DB208E642A005E2592 /* Hero.swift */; };
 		F41741DE208E6450005E2592 /* Fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741DD208E6450005E2592 /* Fighter.swift */; };
 		F41741E0208E6470005E2592 /* Magus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41741DF208E6470005E2592 /* Magus.swift */; };
@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		343C2EF12088CA1200B83722 /* magicfight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = magicfight; sourceTree = BUILT_PRODUCTS_DIR; };
-		343C2EF42088CA1200B83722 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		343C2EF42088CA1200B83722 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F41741DB208E642A005E2592 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		F41741DD208E6450005E2592 /* Fighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fighter.swift; sourceTree = "<group>"; };
 		F41741DF208E6470005E2592 /* Magus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magus.swift; sourceTree = "<group>"; };
@@ -87,8 +87,31 @@
 		343C2EF32088CA1200B83722 /* magicfight */ = {
 			isa = PBXGroup;
 			children = (
-				343C2EF42088CA1200B83722 /* Main.swift */,
+				343C2EF42088CA1200B83722 /* main.swift */,
 				F41B953C20924992008EED0A /* Party.swift */,
+				F47DE41A20C05A38007DFA36 /* Heros */,
+				F47DE41B20C05A50007DFA36 /* weapon */,
+			);
+			path = magicfight;
+			sourceTree = "<group>";
+		};
+		F47DE41A20C05A38007DFA36 /* Heros */ = {
+			isa = PBXGroup;
+			children = (
+				F41B953A209248D9008EED0A /* Team.swift */,
+				F41741DB208E642A005E2592 /* Hero.swift */,
+				F41741E3208E64AA005E2592 /* Dwarf.swift */,
+				F41741E1208E648D005E2592 /* Colossus.swift */,
+				F41741DF208E6470005E2592 /* Magus.swift */,
+				F41741DD208E6450005E2592 /* Fighter.swift */,
+			);
+			path = Heros;
+			sourceTree = "<group>";
+		};
+		F47DE41B20C05A50007DFA36 /* weapon */ = {
+			isa = PBXGroup;
+			children = (
+				F41741E7208E64FE005E2592 /* chest.swift */,
 				F41741EB208F4944005E2592 /* Weapon.swift */,
 				F41741ED208F4A2B005E2592 /* Sword.swift */,
 				F41741F1208F5A40005E2592 /* Shield.swift */,
@@ -96,15 +119,8 @@
 				F41741F5208F5AEA005E2592 /* Mass.swift */,
 				F42055EA20B480D4004F912C /* Stick.swift */,
 				F41741EF208F58DA005E2592 /* Scepter.swift */,
-				F41741E7208E64FE005E2592 /* chest.swift */,
-				F41741E3208E64AA005E2592 /* Dwarf.swift */,
-				F41741E1208E648D005E2592 /* Colossus.swift */,
-				F41741DF208E6470005E2592 /* Magus.swift */,
-				F41741DD208E6450005E2592 /* Fighter.swift */,
-				F41741DB208E642A005E2592 /* Hero.swift */,
-				F41B953A209248D9008EED0A /* Team.swift */,
 			);
-			path = magicfight;
+			path = weapon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +188,7 @@
 				F41B953B209248D9008EED0A /* Team.swift in Sources */,
 				F41741EE208F4A2B005E2592 /* Sword.swift in Sources */,
 				F41741EC208F4944005E2592 /* Weapon.swift in Sources */,
-				343C2EF52088CA1200B83722 /* Main.swift in Sources */,
+				343C2EF52088CA1200B83722 /* main.swift in Sources */,
 				F41B953D20924992008EED0A /* Party.swift in Sources */,
 				F41741DE208E6450005E2592 /* Fighter.swift in Sources */,
 				F41741E2208E648D005E2592 /* Colossus.swift in Sources */,
