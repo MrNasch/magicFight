@@ -33,7 +33,11 @@ class Team {
         }
         print("Name your character")
         let name = readLine()
-        hero.name = name!
+        if name == hero.name {
+            print("name already taken")
+        } else {
+            hero.name = name!
+        }
         heros.append(hero)
         j += 1
     }
