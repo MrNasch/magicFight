@@ -26,7 +26,7 @@ class Party {
         }
     }
     // func that only work if we choose an INT between 1 and 3
-    func input() -> Int {
+    private func input() -> Int {
         var userChoice: Int = Int()
         repeat {
             print("Please select a number between 1 and 3")

@@ -31,7 +31,7 @@ while player1.life > 0 && player2.life > 0 {
     count += 1
 }
 // we pick the winner
-let nameWinner: String
+private let nameWinner: String
 
 if player1.life > 0 {
     nameWinner = party.teams[1].heros.description
