@@ -31,6 +31,7 @@ class Team {
                 print("Please select a class")
             }
         }
+        // ckeck if name is taken
         var exist: Bool = false
         repeat {
         print("Name your character")
