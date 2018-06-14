@@ -18,12 +18,12 @@ class Colossus: Hero {
     }
     
     init() {
-        self.colossusWeapon = Shield()
+        colossusWeapon = Shield()
         super.init(life: 150)
-        self.weapon = self.colossusWeapon
+        weapon = colossusWeapon
     }
     // func that attack other personnage
     override func attackHero(hero: Hero) {
-        hero.getHit(damages: self.weapon.damages)
+        hero.getHit(damages: weapon.damages)
     }
 }

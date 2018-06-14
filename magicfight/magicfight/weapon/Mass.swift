@@ -1,6 +1,6 @@
 // class mass herited from weapon
 class Mass: Weapon {
     init() {
-        super.init(damages: 55, healing: 0)
+        super.init(damages: 35, healing: 0)
     }
 }

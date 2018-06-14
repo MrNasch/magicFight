@@ -17,12 +17,12 @@ class Magus: Hero {
         }
     }
     init() {
-        self.magusWeapon = Scepter()
+        magusWeapon = Scepter()
         super.init(life: 120)
-        self.weapon = self.magusWeapon
+        weapon = magusWeapon
     }
     // func that add life to a personnage from his team
     override func attackHero(hero: Hero) {
-        hero.getRegen(healing: self.weapon.healing)
+        hero.getRegen(healing: weapon.healing)
     }
 }

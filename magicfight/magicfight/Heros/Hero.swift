@@ -10,9 +10,9 @@ class Hero {
     // func play against other player
     func play(against hero: Hero) {
         
-        self.description()
+        description()
         
-        self.attackHero(hero: hero)
+        attackHero(hero: hero)
         
     }
     
@@ -23,11 +23,11 @@ class Hero {
     }
     // func remove life from the personnage
     func getHit(damages: Int) {
-        self.life = self.life - damages
+        life = life - damages
         
         // if life is under 0 the personnage is dead
-        if self.life < 0 {
-            self.life = 0
+        if life < 0 {
+            life = 0
         }
     }
     // original attack func
@@ -37,8 +37,8 @@ class Hero {
     }
     // display name, life and weapon
     func description() {
-        print("Name : " + self.name)
-        print("Life : \(self.life)")
-        print("damages: \(self.weapon.damages) - Healing: \(self.weapon.healing)")
+        print("Name : " + name)
+        print("Life : \(life)")
+        print("damages: \(weapon.damages) - Healing: \(weapon.healing)")
     }
 }

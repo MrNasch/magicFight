@@ -18,12 +18,12 @@ class Dwarf: Hero {
     }
     
     init() {
-        self.dwarfWeapon = Axe()
+        dwarfWeapon = Axe()
         super.init(life: 75)
-        self.weapon = self.dwarfWeapon
+        weapon = dwarfWeapon
     }
     // func that attack other personnage
     override func attackHero(hero: Hero) {
-        hero.getHit(damages: self.weapon.damages)
+        hero.getHit(damages: weapon.damages)
     }
 }
