@@ -34,20 +34,20 @@ class Team {
         // ckeck if name is taken
         var exist: Bool = false
         repeat {
-        print("Name your character")
-        let name = readLine()
-        for hero in heros {
-            if name == hero.name {
-                exist = true
+            print("Name your character")
+            let name = readLine()
+            for hero in heros {
+                if name == hero.name {
+                    exist = true
+                }
             }
-        }
-        if !exist {
-            // opening optional 
-            if let nameNotExist = name {
-                hero.name = nameNotExist
+            if !exist {
+                // opening optional
+                if let nameNotExist = name {
+                    hero.name = nameNotExist
+                }
             }
-        }
-        heros.append(hero)
+            heros.append(hero)
         } while exist == true
         j += 1
     }
