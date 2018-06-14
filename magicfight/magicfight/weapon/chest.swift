@@ -1,13 +1,12 @@
 //creat class Chest
 class Chest {
-    func changeWeapon() {
-        /*heros = Hero
+    func changeWeapon(hero: Hero) {
         print("A chest appears! You get a new weapon!")
-        if heros == Magus {
-            Weapon = Stick()
+        if hero.heroClass == "Magus" {
+            hero.weapon = Stick()
         } else {
-            Weapon = Mass()
-        } */
+            hero.weapon = Mass()
+        }
     }
 }
 

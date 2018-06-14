@@ -13,18 +13,22 @@ class Team {
             switch choice {
             case "1":
                 hero = Fighter()
+                hero.setHeroClass(heroClass: "Fighter")
                 print("You choose a fighter")
                 team.heros.append(hero)
             case "2":
                 hero = Magus()
+                hero.setHeroClass(heroClass: "Magus")
                 print("You choose a magus")
                 team.heros.append(hero)
             case "3":
                 hero = Colossus()
+                hero.setHeroClass(heroClass: "Colossus")
                 print("You choose a colossus")
                 team.heros.append(hero)
             case "4":
                 hero = Dwarf()
+                hero.setHeroClass(heroClass: "Dwarf")
                 print("You choose a dwarf")
                 team.heros.append(hero)
             default:
@@ -37,14 +41,18 @@ class Team {
             print("Name your character")
             let name = readLine()
             for hero in heros {
+                print("test")
                 if name == hero.name {
                     exist = true
+                    print(name! + " " + "\(exist)")
                 }
             }
             if !exist {
                 // opening optional
                 if let nameNotExist = name {
                     hero.name = nameNotExist
+                    exist = false
+                    print(name! + " " + "\(exist)")
                 }
             }
             heros.append(hero)

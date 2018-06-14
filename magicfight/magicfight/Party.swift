@@ -51,6 +51,7 @@ class Party {
         usedHeroTeam1 = team.heros[Int(userChoice) - 1]
         print(usedHeroTeam1.description())
         
+        Chest.changeWeapon(Chest)
         
         print("Please select one personnage from team2")
         print(displayTeam(number: 2))

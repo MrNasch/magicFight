@@ -2,6 +2,7 @@
 class Hero {
     var name: String = ""
     var life: Int
+    var heroClass: String = ""
     var weapon = Weapon(damages: 0, healing: 0)
     
     init(life: Int) {
@@ -15,7 +16,13 @@ class Hero {
         attackHero(hero: hero)
         
     }
-    
+    // get the class of the hero
+    func getHeroClass() -> String {
+        return self.heroClass
+    }
+    func setHeroClass(heroClass: String) {
+        self.heroClass = heroClass
+    }
     // func add life to the personnage
     func getRegen(healing: Int) {
         life = life + healing
