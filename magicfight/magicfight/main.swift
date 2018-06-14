@@ -11,8 +11,8 @@ import Foundation
 let party: Party = Party()
 let team: Team = Team()
 print(party.newGame)
-var player1 = party.usedHeroTeam1
-var player2 = party.usedHeroTeam2
+let player1 = party.usedHeroTeam1
+let player2 = party.usedHeroTeam2
 var count = 0
 // create the teams
 party.createTeam(number: 1)

@@ -3,9 +3,9 @@ class Party {
     var teams = [Team]()
     
     // created var newGame imported when you creat a new game
-    var newGame: String = "Welcome to MagicFight please select 3 characters"
-    var usedHeroTeam1: Hero = Fighter()
-    var usedHeroTeam2: Hero = Fighter()
+    let newGame: String = "Welcome to MagicFight please select 3 characters"
+    var usedHeroTeam1: Hero = Hero(life: 100)
+    var usedHeroTeam2: Hero = Hero(life: 100)
     // create 2 diferent team
     func createTeam(number: Int) {
         print("Create your team player \(number)")
@@ -58,7 +58,7 @@ class Party {
         
         
         
-        usedHeroTeam2 = team.heros[Int(userChoice2) - 1]
+        let usedHeroTeam2 = team.heros[Int(userChoice2) - 1]
         print(usedHeroTeam2.description())
         
         print("\(usedHeroTeam1)" + " " + "attacked" + " " + "\(usedHeroTeam2)")

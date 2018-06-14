@@ -31,14 +31,20 @@ class Team {
                 print("Please select a class")
             }
         }
+        var exist: Bool = false
+        repeat {
         print("Name your character")
         let name = readLine()
-        if name == hero.name {
-            print("name already taken")
-        } else {
+        for hero in heros {
+            if name == hero.name {
+                exist = true
+            }
+        }
+        if !exist {
             hero.name = name!
         }
         heros.append(hero)
+        } while exist == true
         j += 1
     }
     // func that display the personnage choosen
