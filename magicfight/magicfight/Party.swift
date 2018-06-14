@@ -52,7 +52,7 @@ class Party {
         print(usedHeroTeam1.description())
         
         // random chest
-        Chest.changeWeapon(Chest)
+        Chest.changeWeapon(hero: Hero)
         
         print("Please select one personnage from team2")
         print(displayTeam(number: 2))
