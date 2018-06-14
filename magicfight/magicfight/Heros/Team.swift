@@ -42,7 +42,10 @@ class Team {
             }
         }
         if !exist {
-            hero.name = name!
+            // opening optional 
+            if let nameNotExist = name {
+                hero.name = nameNotExist
+            }
         }
         heros.append(hero)
         } while exist == true
