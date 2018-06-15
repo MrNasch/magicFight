@@ -1,3 +1,4 @@
+import Foundation
 // class party
 class Party {
     var teams = [Team]()
@@ -52,7 +53,11 @@ class Party {
         print(usedHeroTeam1.description())
         
         // random chest
-        Chest.changeWeapon(hero: Hero)
+        let chest = Chest()
+        let number = Int(arc4random_uniform(11))
+        if number == 4 {
+            //chest.changeWeapon(hero: Hero)
+        }
         
         print("Please select one personnage from team2")
         print(displayTeam(number: 2))

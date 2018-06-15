@@ -11,8 +11,6 @@ class Hero {
     // func play against other player
     func play(against hero: Hero) {
         
-        description()
-        
         attackHero(hero: hero)
         
     }
@@ -20,6 +18,7 @@ class Hero {
     func getHeroClass() -> String {
         return self.heroClass
     }
+    // set the class of the hero
     func setHeroClass(heroClass: String) {
         self.heroClass = heroClass
     }
