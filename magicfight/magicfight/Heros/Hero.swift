@@ -29,18 +29,14 @@ class Hero {
     }
     // func remove life from the personnage
     func getHit(damages: Int) {
-        life = life - damages
-        
-        // if life is under 0 the personnage is dead
-        if life < 0 {
-            life = 0
-        }
+        life -= max(damages, 0)
     }
+    
     // original attack func
     func attackHero(hero: Hero) {
-        print("Do nothing")
-        self.description()
+        fatalError()
     }
+    
     // display name, life and weapon
     func description() {
         print("Name : " + name)
