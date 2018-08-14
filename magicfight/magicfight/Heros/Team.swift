@@ -8,57 +8,64 @@ class Team {
             + "\n2. Magus"
             + "\n3. Colossus"
             + "\n4. Dwarf")
-        var hero = Hero(life: 100)
-        if let choice = readLine() {
-            switch choice {
-            case "1":
-                hero = Fighter()
-                hero.setHeroClass(heroClass: "Fighter")
-                print("You choose a fighter")
-                team.heros.append(hero)
-            case "2":
-                hero = Magus()
-                hero.setHeroClass(heroClass: "Magus")
-                print("You choose a magus")
-                team.heros.append(hero)
-            case "3":
-                hero = Colossus()
-                hero.setHeroClass(heroClass: "Colossus")
-                print("You choose a colossus")
-                team.heros.append(hero)
-            case "4":
-                hero = Dwarf()
-                hero.setHeroClass(heroClass: "Dwarf")
-                print("You choose a dwarf")
-                team.heros.append(hero)
-            default:
-                print("Please select a class")
+        
+        var hero: Hero?
+        
+        repeat {
+            if let choice = readLine() {
+                switch choice {
+                case "1":
+                    hero = Fighter()
+                    hero?.setHeroClass(heroClass: "Fighter")
+                    
+                case "2":
+                    hero = Magus()
+                    hero?.setHeroClass(heroClass: "Magus")
+                    
+                case "3":
+                    hero = Colossus()
+                    hero?.setHeroClass(heroClass: "Colossus")
+                    
+                case "4":
+                    hero = Dwarf()
+                    hero?.setHeroClass(heroClass: "Dwarf")
+                default:
+                    print("Please select a class")
+                }
             }
-        }
-        // ckeck if name is taken
-        var exist: Bool = false
+        } while hero == nil
+        
+        guard let theHero = hero else { fatalError() }
+        
+        print("You choose a \(theHero.heroClass)")
+        
+        
         repeat {
             print("Name your character")
-            let name = readLine()
+            guard let name = readLine() else { continue }
+            
+            var alreadyExist = false
             for hero in heros {
-                print("test")
-                if name == hero.name {
-                    exist = true
-                    print(name! + " " + "\(exist)")
+                if hero.name == name {
+                    alreadyExist = true
                 }
             }
-            if !exist {
-                // opening optional
-                if let nameNotExist = name {
-                    hero.name = nameNotExist
-                    exist = false
-                    print(name! + " " + "\(exist)")
-                }
+            
+            if alreadyExist {
+                print(name + " already exist !")
+            } else {
+                theHero.name = name
             }
+        } while theHero.name.isEmpty
+        
+        if let hero = hero {
+            team.heros.append(hero)
             heros.append(hero)
-        } while exist == true
+        }
+        
         j += 1
     }
+    
     // func that display the personnage choosen
     func displayCharacter(index: Int) {
         let hero = heros[index]
