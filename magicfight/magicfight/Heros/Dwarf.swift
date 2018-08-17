@@ -1,5 +1,8 @@
 //creat class dwarf
 class Dwarf: Hero {
+    override var typeName: String {
+        return String(describing: Dwarf.self)
+    }
     var dwarfWeapon: Weapon
     // allows us to change weapon
     override var weapon: Weapon {

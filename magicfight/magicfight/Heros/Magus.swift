@@ -1,5 +1,8 @@
 //creat class magus
 class Magus: Hero {
+    override var typeName: String {
+        return String(describing: Magus.self)
+    }
     var magusWeapon: Weapon
     // allows us to change weapon
     override var weapon: Weapon {

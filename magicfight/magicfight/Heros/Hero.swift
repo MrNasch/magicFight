@@ -2,7 +2,9 @@
 class Hero {
     var name: String = ""
     var life: Int
-    var heroClass: String = ""
+    var typeName: String {
+        return String(describing: Hero.self)
+    }
     var weapon = Weapon(damages: 0, healing: 0)
     
     init(life: Int) {
@@ -13,14 +15,6 @@ class Hero {
         
         attackHero(hero: hero)
         
-    }
-    // get the class of the hero
-    func getHeroClass() -> String {
-        return self.heroClass
-    }
-    // set the class of the hero
-    func setHeroClass(heroClass: String) {
-        self.heroClass = heroClass
     }
     // func add life to the personnage
     func getRegen(healing: Int) {

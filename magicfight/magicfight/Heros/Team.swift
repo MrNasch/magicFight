@@ -16,19 +16,15 @@ class Team {
                 switch choice {
                 case "1":
                     hero = Fighter()
-                    hero?.setHeroClass(heroClass: "Fighter")
                     
                 case "2":
                     hero = Magus()
-                    hero?.setHeroClass(heroClass: "Magus")
                     
                 case "3":
                     hero = Colossus()
-                    hero?.setHeroClass(heroClass: "Colossus")
                     
                 case "4":
                     hero = Dwarf()
-                    hero?.setHeroClass(heroClass: "Dwarf")
                 default:
                     print("Please select a class")
                 }
@@ -37,7 +33,7 @@ class Team {
         
         guard let theHero = hero else { fatalError() }
         
-        print("You choose a \(theHero.heroClass)")
+        print("You choose a \(theHero.typeName)")
         
         
         repeat {

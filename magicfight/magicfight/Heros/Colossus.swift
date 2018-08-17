@@ -1,5 +1,8 @@
 //creat class colossus
 class Colossus: Hero {
+    override var typeName: String {
+        return String(describing: Colossus.self)
+    }
     var colossusWeapon: Weapon
     // allows us to change weapon
     override var weapon: Weapon {
