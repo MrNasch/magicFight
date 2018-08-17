@@ -9,17 +9,16 @@
 import Foundation
 
 
-let party: Party = Party()
-let team: Team = Team()
+let mainparty: Party = Party()
 
-print(party.newGame)
+print(mainparty.newGame)
 
 var count = 0
 
-party.run()
+mainparty.run()
 
 // we pick the winner
-if party.usedHeroTeam1.life > 0 {
+if mainparty.usedHeroTeam1.life > 0 {
     print("The winner is player 1")
 } else {
     print("The winner is player 2")

@@ -13,7 +13,7 @@ class Party {
         print("Create your team player \(number)")
         let team = Team()
         for _ in 0...2 {
-            team.createCharacter()
+            team.createCharacter(otherTeam: teams.first)
         }
         print("Choose and name your characters")
         
@@ -44,46 +44,52 @@ class Party {
         return userChoice
     }
     // func to choose personnage from 1 team and 1 from the other team
-    func chooseHero() {
+    func chooseHero(firstTeam: Bool) {
+        let teamWhichPlay = firstTeam == true ? 1 : 2
+        let againstTeam = teamWhichPlay == 1 ? 2 : 1
         
         // team 1 attack
-        print("Please select one personnage from team1")
-        print(displayTeam(number: 1))
+        print("Please select one personnage from team \(teamWhichPlay)")
+        print(displayTeam(number: teamWhichPlay))
         let userChoice = input()
         
         
-        usedHeroTeam1 = team.heros[Int(userChoice) - 1]
+        usedHeroTeam1 = teams[teamWhichPlay - 1].heros[Int(userChoice) - 1]
         print(usedHeroTeam1.description())
         
         // random chest
         let chest = Chest()
         let number = Int(arc4random_uniform(11))
         if number == 4 {
-            //chest.changeWeapon(hero: Hero)
+           chest.changeWeapon(hero: usedHeroTeam1)
         }
         
-        print("Please select one personnage from team2")
-        print(displayTeam(number: 2))
-        let userChoice2 = input()
+        if usedHeroTeam1 is Magus {
+            print("Please select one personnage from team \(teamWhichPlay)")
+            print(displayTeam(number: teamWhichPlay))
+            let userChoice = input()
+            
+            
+            usedHeroTeam2 = teams[teamWhichPlay - 1].heros[Int(userChoice) - 1]
+            print(usedHeroTeam2.description())
+        } else {
+            print("Please select one personnage from team \(againstTeam)")
+            print(displayTeam(number: againstTeam))
+            let userChoice = input()
+            
+            
+            usedHeroTeam2 = teams[againstTeam - 1].heros[Int(userChoice) - 1]
+            print(usedHeroTeam2.description())
+        }
         
         
-        
-        usedHeroTeam2 = team.heros[Int(userChoice2) - 1]
-        print(usedHeroTeam2.description())
-        
-        print("\(usedHeroTeam1)" + " " + "attacked" + " " + "\(usedHeroTeam2)")
-        print("\(usedHeroTeam2) lost \(usedHeroTeam1.weapon.damages) life")
         
     }
     
-    func play() -> Bool {
-        party.chooseHero()
+    func play(firstTeam: Bool) -> Bool {
+        party.chooseHero(firstTeam: firstTeam)
         party.usedHeroTeam1.play(against: party.usedHeroTeam2)
-        
-        if party.usedHeroTeam2.life > 0 {
-            party.usedHeroTeam2.play(against: party.usedHeroTeam1)
-        }
-        return party.usedHeroTeam1.life > 0 && party.usedHeroTeam2.life > 0
+        return party.teams[0].herosAlwaysAlive == true && party.teams[1].herosAlwaysAlive == true
     }
     func run() {
         // create the teams
@@ -98,7 +104,8 @@ class Party {
         
         
         // while team1 is alive and team 2 alive we play
-        while party.play() {
+        
+        while party.play(firstTeam: count % 2 == 0) {
             count += 1
         }
     }

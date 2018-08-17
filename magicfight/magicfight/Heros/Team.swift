@@ -1,8 +1,20 @@
 class Team {
     var heros = [Hero]()
+    
+    var herosAlwaysAlive: Bool {
+        var haveAHeroAlive = false
+        for hero in heros {
+            if hero.life > 0 {
+                haveAHeroAlive = true
+                break
+            }
+        }
+        return haveAHeroAlive
+    }
+    
     var j: Int = 1
     // func that allows us to choose a personnage and add in the team
-    func createCharacter() {
+    func createCharacter(otherTeam: Team?) {
         print("Wich class do you want to play \(j)"
             + "\n1. Fighter"
             + "\n2. Magus"
@@ -33,7 +45,7 @@ class Team {
         
         guard let theHero = hero else { fatalError() }
         
-        print("You choose a \(theHero.typeName)")
+        print("You choose a \(type(of: theHero))")
         
         
         repeat {
@@ -46,7 +58,13 @@ class Team {
                     alreadyExist = true
                 }
             }
-            
+            if let otherTeam = otherTeam {
+                for hero in otherTeam.heros {
+                    if hero.name == name {
+                        alreadyExist = true
+                    }
+                }
+            }
             if alreadyExist {
                 print(name + " already exist !")
             } else {
@@ -55,7 +73,6 @@ class Team {
         } while theHero.name.isEmpty
         
         if let hero = hero {
-            team.heros.append(hero)
             heros.append(hero)
         }
         

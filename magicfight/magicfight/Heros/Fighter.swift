@@ -1,8 +1,5 @@
 //creat class fighter
 class Fighter: Hero {
-    override var typeName: String {
-        return String(describing: Fighter.self)
-    }
     var fighterWeapon: Weapon
     // allows us to change weapon
     override var weapon: Weapon {

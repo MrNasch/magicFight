@@ -2,9 +2,9 @@
 class Hero {
     var name: String = ""
     var life: Int
-    var typeName: String {
-        return String(describing: Hero.self)
-    }
+    //var typeName: String {
+     //   return String(describing: Hero.self)
+    //}
     var weapon = Weapon(damages: 0, healing: 0)
     
     init(life: Int) {
@@ -12,9 +12,17 @@ class Hero {
     }
     // func play against other player
     func play(against hero: Hero) {
+        let previousHeroLife = hero.life
         
         attackHero(hero: hero)
         
+        if previousHeroLife > hero.life {
+            print("\(self)" + " " + "attacked" + " " + "\(hero)")
+            print("\(hero) lost \(self.weapon.damages) life")
+        } else {
+            print("\(self)" + " " + "Healed" + " " + "\(hero)")
+            print("\(hero) gain \(self.weapon.damages) life")
+        }
     }
     // func add life to the personnage
     func getRegen(healing: Int) {
