@@ -18,7 +18,7 @@ class Hero {
             print("\(hero) lost \(self.weapon.damages) life")
         } else {
             print("\(self)" + " " + "Healed" + " " + "\(hero)")
-            print("\(hero) gain \(self.weapon.damages) life")
+            print("\(hero) gain \(self.weapon.healing) life")
         }
     }
     // func add life to the personnage
