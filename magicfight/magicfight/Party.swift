@@ -7,7 +7,7 @@ class Party {
     let newGame: String = "Welcome to MagicFight please select 3 characters"
     var usedHeroTeam1: Hero = Hero(life: 100)
     var usedHeroTeam2: Hero = Hero(life: 100)
-
+    
     // create 2 diferent team
     func createTeam(number: Int) {
         print("Create your team player \(number)")
@@ -50,12 +50,12 @@ class Party {
         
         // team 1 attack
         repeat {
-        print("Please select one personnage from team \(teamWhichPlay)")
-        print(displayTeam(number: teamWhichPlay))
-        let userChoice = input()
+            print("Please select one personnage from team \(teamWhichPlay)")
+            print(displayTeam(number: teamWhichPlay))
+            let userChoice = input()
             
-        usedHeroTeam1 = teams[teamWhichPlay - 1].heros[Int(userChoice) - 1]
-        print(usedHeroTeam1.description())
+            usedHeroTeam1 = teams[teamWhichPlay - 1].heros[Int(userChoice) - 1]
+            print(usedHeroTeam1.description())
             
         } while usedHeroTeam1.life <= 0
         
@@ -63,7 +63,7 @@ class Party {
         let chest = Chest()
         let number = Int(arc4random_uniform(11))
         if number == 4 {
-           chest.changeWeapon(hero: usedHeroTeam1)
+            chest.changeWeapon(hero: usedHeroTeam1)
         }
         
         if usedHeroTeam1 is Magus {
@@ -76,13 +76,13 @@ class Party {
             print(usedHeroTeam2.description())
         } else {
             repeat {
-            print("Please select one personnage from team \(againstTeam)")
-            print(displayTeam(number: againstTeam))
-            let userChoice = input()
-            
-            
-            usedHeroTeam2 = teams[againstTeam - 1].heros[Int(userChoice) - 1]
-            print(usedHeroTeam2.description())
+                print("Please select one personnage from team \(againstTeam)")
+                print(displayTeam(number: againstTeam))
+                let userChoice = input()
+                
+                
+                usedHeroTeam2 = teams[againstTeam - 1].heros[Int(userChoice) - 1]
+                print(usedHeroTeam2.description())
             } while usedHeroTeam2.life <= 0
         }
         

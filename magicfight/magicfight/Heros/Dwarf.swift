@@ -1,6 +1,5 @@
 //creat class dwarf
 class Dwarf: Hero {
-//    
     var dwarfWeapon: Weapon
     // allows us to change weapon
     override var weapon: Weapon {
