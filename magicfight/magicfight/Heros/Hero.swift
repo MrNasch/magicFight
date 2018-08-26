@@ -2,9 +2,6 @@
 class Hero {
     var name: String = ""
     var life: Int
-    //var typeName: String {
-     //   return String(describing: Hero.self)
-    //}
     var weapon = Weapon(damages: 0, healing: 0)
     
     init(life: Int) {
@@ -26,7 +23,7 @@ class Hero {
     }
     // func add life to the personnage
     func getRegen(healing: Int) {
-        life = life + healing
+        life += max(healing, 0)
         
     }
     // func remove life from the personnage

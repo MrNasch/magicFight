@@ -1,6 +1,6 @@
 class Team {
     var heros = [Hero]()
-    
+    // Bool to verify if there's still a hero alive
     var herosAlwaysAlive: Bool {
         var haveAHeroAlive = false
         for hero in heros {

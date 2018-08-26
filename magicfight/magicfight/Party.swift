@@ -49,13 +49,15 @@ class Party {
         let againstTeam = teamWhichPlay == 1 ? 2 : 1
         
         // team 1 attack
+        repeat {
         print("Please select one personnage from team \(teamWhichPlay)")
         print(displayTeam(number: teamWhichPlay))
         let userChoice = input()
-        
-        
+            
         usedHeroTeam1 = teams[teamWhichPlay - 1].heros[Int(userChoice) - 1]
         print(usedHeroTeam1.description())
+            
+        } while usedHeroTeam1.life <= 0
         
         // random chest
         let chest = Chest()
@@ -73,6 +75,7 @@ class Party {
             usedHeroTeam2 = teams[teamWhichPlay - 1].heros[Int(userChoice) - 1]
             print(usedHeroTeam2.description())
         } else {
+            repeat {
             print("Please select one personnage from team \(againstTeam)")
             print(displayTeam(number: againstTeam))
             let userChoice = input()
@@ -80,6 +83,7 @@ class Party {
             
             usedHeroTeam2 = teams[againstTeam - 1].heros[Int(userChoice) - 1]
             print(usedHeroTeam2.description())
+            } while usedHeroTeam2.life <= 0
         }
         
         
@@ -87,25 +91,25 @@ class Party {
     }
     
     func play(firstTeam: Bool) -> Bool {
-        party.chooseHero(firstTeam: firstTeam)
-        party.usedHeroTeam1.play(against: party.usedHeroTeam2)
-        return party.teams[0].herosAlwaysAlive == true && party.teams[1].herosAlwaysAlive == true
+        chooseHero(firstTeam: firstTeam)
+        usedHeroTeam1.play(against: usedHeroTeam2)
+        return teams[0].herosAlwaysAlive == true && teams[1].herosAlwaysAlive == true
     }
     func run() {
         // create the teams
         print("--- TEAM BUILDING")
-        party.createTeam(number: 1)
-        party.createTeam(number: 2)
+        createTeam(number: 1)
+        createTeam(number: 2)
         
         // display the teams
         print("--- TEAM RESUME")
-        party.displayTeam(number: 1)
-        party.displayTeam(number: 2)
+        displayTeam(number: 1)
+        displayTeam(number: 2)
         
         
         // while team1 is alive and team 2 alive we play
         
-        while party.play(firstTeam: count % 2 == 0) {
+        while play(firstTeam: count % 2 == 0) {
             count += 1
         }
     }
