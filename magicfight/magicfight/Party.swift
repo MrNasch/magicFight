@@ -47,17 +47,26 @@ class Party {
     func chooseHero(firstTeam: Bool) {
         let teamWhichPlay = firstTeam == true ? 1 : 2
         let againstTeam = teamWhichPlay == 1 ? 2 : 1
+        var selectedHero: Hero?
         
-        // team 1 attack
-        repeat {
+        while selectedHero == nil {
             print("Please select one personnage from team \(teamWhichPlay)")
             print(displayTeam(number: teamWhichPlay))
             let userChoice = input()
             
-            usedHeroTeam1 = teams[teamWhichPlay - 1].heros[Int(userChoice) - 1]
-            print(usedHeroTeam1.description())
+            let hero = teams[teamWhichPlay - 1].heros[Int(userChoice) - 1]
+            if hero.life <= 0 {
+                print("Your hero is dead")
+            } else {
+                selectedHero = hero
+            }
+        }
+        // team 1 attack
+
             
-        } while usedHeroTeam1.life <= 0
+        usedHeroTeam1 = selectedHero!
+            print(usedHeroTeam1.description())
+
         
         // random chest
         let chest = Chest()
@@ -75,15 +84,21 @@ class Party {
             usedHeroTeam2 = teams[teamWhichPlay - 1].heros[Int(userChoice) - 1]
             print(usedHeroTeam2.description())
         } else {
-            repeat {
+            selectedHero = nil
+            while selectedHero == nil {
                 print("Please select one personnage from team \(againstTeam)")
                 print(displayTeam(number: againstTeam))
                 let userChoice = input()
                 
-                
-                usedHeroTeam2 = teams[againstTeam - 1].heros[Int(userChoice) - 1]
-                print(usedHeroTeam2.description())
-            } while usedHeroTeam2.life <= 0
+                let hero = teams[againstTeam - 1].heros[Int(userChoice) - 1]
+                if hero.life <= 0 {
+                    print("Your hero is dead")
+                } else {
+                    selectedHero = hero
+                }
+                usedHeroTeam2 = selectedHero!
+                print(usedHeroTeam1.description())
+            }
         }
         
         
