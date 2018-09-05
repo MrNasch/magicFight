@@ -47,7 +47,7 @@ class Team {
         
         print("You choose a \(type(of: theHero))")
         
-        
+        // Verify if name exist
         repeat {
             print("Name your character")
             guard let name = readLine() else { continue }
