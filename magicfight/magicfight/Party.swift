@@ -96,9 +96,9 @@ class Party {
                 } else {
                     selectedHero = hero
                 }
-                usedHeroTeam2 = selectedHero!
-                print(usedHeroTeam1.description())
             }
+            usedHeroTeam2 = selectedHero!
+            print(usedHeroTeam1.description())
         }
         
         

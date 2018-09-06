@@ -1,6 +1,6 @@
 // class shield herited from weapon
 class Shield: Weapon {
     init() {
-        super.init(damages: 5, healing: 0)
+        super.init(damages: 50, healing: 0)
     }
 }
